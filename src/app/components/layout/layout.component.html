@@ -1,0 +1,52 @@
+<div class="mx-auto max-w-7xl">
+	<nav class="navbar">
+		<div class="navbar-start">Logo</div>
+		<div class="navbar-end">
+			<ul class="menu menu-horizontal">
+				<li>
+					<label
+						><a
+							routerLink="dashboard"
+							routerLinkActive="router-link-active"
+							>Dashboard</a
+						></label
+					>
+				</li>
+				<li>
+					<label
+						><a
+							routerLink="videos/add"
+							routerLinkActive="router-link-active"
+							>Create new video</a
+						></label
+					>
+				</li>
+				<li>
+					<label>
+						<div
+							class="dropdown"
+							tabindex="0"
+							*ngIf="authService.isLoggedIn; else loginButton"
+						>
+							<label>{{ currentUser.username }}</label>
+							<div class="dropdown-content">
+								<ul class="menu">
+									<li><label for="">Logout</label></li>
+								</ul>
+							</div>
+						</div></label
+					>
+				</li>
+			</ul>
+
+			<ng-template #loginButton>
+				<a routerLink="login" routerLinkActive="router-link-active"
+					>Login</a
+				>
+			</ng-template>
+		</div>
+	</nav>
+	<main>
+		<router-outlet></router-outlet>
+	</main>
+</div>

@@ -1,3 +1,50 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "quanghiep03198@gmail.com",
+      "password": "$2a$10$mLOhYtbUC1WOD6CILOv2dOYefVEQNUrdLwCS56ggVMKOCQjOWFFJS",
+      "username": "quang hiep",
+      "id": 1
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "video 1",
+      "views": 1000000,
+      "description": "some description",
+      "url": "url",
+      "image": "sdfdfdf"
+    },
+    {
+      "title": "video 2",
+      "description": "desfasdf",
+      "url": "sdfa",
+      "image": "sdfsadf",
+      "id": 2,
+      "views": 0
+    },
+    {
+      "title": "edited video",
+      "description": "desfasdf",
+      "url": "sdfa",
+      "image": "sdfsadf",
+      "id": 3,
+      "views": 0
+    },
+    {
+      "title": "video 1",
+      "description": "some description",
+      "url": "urlsdfdf",
+      "image": "sdf",
+      "id": 4
+    },
+    {
+      "title": "video 1",
+      "description": "some description",
+      "url": "url",
+      "image": "sdf",
+      "id": 5
+    }
+  ]
 }

@@ -1,0 +1,38 @@
+<table class="table w-full">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>title</th>
+			<th>url</th>
+			<th>image</th>
+			<th>description</th>
+			<th>views</th>
+			<th>actions</th>
+		</tr>
+	</thead>
+	<tbody *ngFor="let video of videoList">
+		<tr>
+			<td>{{ video.id }}</td>
+			<td>{{ video.title }}</td>
+			<td>{{ video.url }}</td>
+			<td>{{ video.image }}</td>
+			<td>{{ video.description }}</td>
+			<td>{{ video.views }}</td>
+			<td>
+				<div class="flex items-center gap-2">
+					<a
+						[routerLink]="['/videos', video.id, 'edit']"
+						class="btn-xs btn"
+						>Edit</a
+					>
+					<button
+						class="btn-error btn-xs btn"
+						(click)="deleteVideo(video.id)"
+					>
+						delete
+					</button>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>

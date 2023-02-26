@@ -1,0 +1,62 @@
+<h1 class="mb-6 text-center text-2xl font-medium">Edit</h1>
+
+<form
+	action=""
+	class="mx-auto flex max-w-sm flex-col gap-6 rounded-lg bg-base-300 p-4"
+	[formGroup]="_form"
+	(ngSubmit)="onSubmit()"
+>
+	<div class="form-control">
+		<input
+			type="text"
+			class="input-bordered input"
+			formControlName="title"
+			placeholder="title"
+		/>
+		<small
+			class="font-medium text-error"
+			*ngIf="form.title.errors?.['required'] && form.title.dirty"
+			>This field is required!</small
+		>
+	</div>
+	<div class="form-control">
+		<input
+			type="text"
+			class="input-bordered input"
+			formControlName="description"
+			placeholder="description"
+		/>
+		<small
+			class="font-medium text-error"
+			*ngIf="form.description.errors?.['required'] && form.description.dirty"
+			>This field is required!</small
+		>
+	</div>
+	<div class="form-control">
+		<input
+			type="text"
+			class="input-bordered input"
+			formControlName="url"
+			placeholder="url"
+		/>
+		<small
+			class="font-medium text-error"
+			*ngIf="form.url.errors?.['required'] && form.url.dirty"
+			>This field is required!</small
+		>
+	</div>
+	<div class="form-control">
+		<input
+			type="text"
+			class="input-bordered input"
+			formControlName="image"
+			placeholder="image"
+		/>
+		<small
+			class="font-medium text-error"
+			*ngIf="form.image.errors?.['required'] && form.image.dirty"
+			>This field is required!</small
+		>
+	</div>
+	<div class="form-control"><button class="btn">save</button></div>
+</form>

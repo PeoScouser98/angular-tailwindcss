@@ -1,0 +1,50 @@
+<h1 class="mb-6 text-center text-2xl font-medium">Register</h1>
+
+<form
+	action=""
+	class="mx-auto flex max-w-sm flex-col gap-6 rounded-lg bg-base-300 p-4"
+	[formGroup]="_form"
+	(ngSubmit)="onSubmit()"
+>
+	<div class="form-control">
+		<input
+			type="text"
+			class="input-bordered input"
+			formControlName="email"
+			placeholder="email"
+		/>
+		<small
+			class="font-medium text-error"
+			*ngIf="form.email.errors?.['required'] && form.email.dirty"
+			>This field is required!</small
+		>
+	</div>
+	<div class="form-control">
+		<input
+			type="text"
+			class="input-bordered input"
+			formControlName="password"
+			placeholder="password"
+		/>
+		<small
+			class="font-medium text-error"
+			*ngIf="form.password.errors?.['required'] && form.password.dirty"
+			>This field is required!</small
+		>
+	</div>
+	<div class="form-control">
+		<input
+			type="text"
+			class="input-bordered input"
+			formControlName="username"
+			placeholder="username"
+		/>
+		<small
+			class="font-medium text-error"
+			*ngIf="form.username.errors?.['required'] && form.username.dirty"
+			>This field is required!</small
+		>
+	</div>
+
+	<div class="form-control"><button class="btn">register</button></div>
+</form>
