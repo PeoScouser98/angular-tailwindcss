@@ -1,3 +1,28 @@
 {
-  "users": []
+  "users": [
+    {
+      "email": "quanghiep03198@gmail.com",
+      "password": "$2a$10$rfUbVLbmcSPTaleiB5vr2.zK/K/B4UgHVifcSLqw.bilPlefMEYKS",
+      "username": "quang hiep",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "updated product",
+      "price": 1000,
+      "qty": 100,
+      "img": "img url",
+      "desc": "some description"
+    },
+    {
+      "name": "product 2",
+      "price": "1000",
+      "qty": 15555,
+      "img": "url",
+      "desc": "asdfasdf",
+      "id": 2
+    }
+  ]
 }
